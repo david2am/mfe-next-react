@@ -3,10 +3,10 @@
     "version": "1.0.0",
     "private": true,
     "scripts": {
-        "start": "concurrently \"npm run watch\" \"npm run serve\"",
+        "dev": "concurrently \"npm run watch\" \"npm run serve\"",
         "watch": "webpack --watch",
         "build": "webpack --mode production",
-        "serve": "serve dist -p 8082",
+        "serve": "serve dist -p 8083",
         "clean": "rm -rf dist"
     },
     "dependencies": {

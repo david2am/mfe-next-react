@@ -47,10 +47,10 @@ module.exports = {
 
   plugins: [
     new ModuleFederationPlugin({
-      name: 'mod',
+      name: 'remote',
       filename: 'remoteEntry.js',
       exposes: {
-        './Login': './src/components/Login',
+        './Home': './src/components/Home'
       },
       remotes: {
         shared: 'shared@http://localhost:8081/remoteEntry.js',
